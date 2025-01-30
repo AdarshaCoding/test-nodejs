@@ -1,16 +1,16 @@
 console.log("Sum Module...");
-let x = 100;
-function sum(a, b) {
-  result = a + b;
+export let x = 100;
+export function sum(a, b) {
+  let result = a + b;
   console.log(result);
 }
 
-console.log(module.exports);
-module.exports = { sum };
+// console.log(module.exports);
+// module.exports = { sum };
 // module.exports = { sum: sum };
 
 // module.exports.sum = sum;
-module.exports.x = x;
-console.log(module.exports);
+// module.exports.x = x;
+// console.log(module.exports);
 
 //module.exports is an empty object
